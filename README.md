@@ -68,7 +68,7 @@ Optional: Build for specific architecture:
 ./build.sh amd64    # Intel Mac
 ```
 
-Output: `build/bin/wails-react-starter.app`
+Output: `build/bin/wails-xmlui.app`
 
 ### Running the Built App
 
@@ -76,7 +76,7 @@ Output: `build/bin/wails-react-starter.app`
 ./run.sh
 ```
 
-Or double-click `build/bin/wails-react-starter.app` in Finder.
+Or double-click `build/bin/wails-xmlui.app` in Finder.
 
 ## Available Scripts
 

@@ -51,5 +51,5 @@ echo "Running: ${WAILS_CMD[*]}"
 # Execute the command
 "${WAILS_CMD[@]}"
 
-echo "Built macOS application bundle: $OUT_DIR/wails-react-starter.app"
-echo "You can run it with: open $OUT_DIR/wails-react-starter.app"
+echo "Built macOS application bundle: $OUT_DIR/wails-xmlui.app"
+echo "You can run it with: open $OUT_DIR/wails-xmlui.app"

@@ -1,37 +1,28 @@
 <App>
   <Home />
-  <VStack gap="medium">
-    <H3>
-      Custom Button Component
-    </H3>
-    <CustomButton label="Purple Button" />
-    <Button onClick='toast("Hello!!!")'>Hello!!!</Button>
-  </VStack>
-  <VStack gap="medium">
-    <H3>
-      StyledText Component (React-based)
-    </H3>
-    <Messenger />
-    <StyledText text="This is normal text" variant="normal" size="medium" />
-    <StyledText
-      text="This is bold text"
-      variant="bold"
-      size="large"
-      color="#007bff" />
-    <StyledText
-      text="This is italic text"
-      variant="italic"
-      size="medium"
-      color="#28a745" />
-    <StyledText
-      text="This is underlined text"
-      variant="underline"
-      size="small"
-      color="#dc3545" />
-    <StyledText
-      text="Extra large styled text!"
-      variant="bold"
-      size="xlarge"
-      color="#ff6600" />
-  </VStack>
+  <H2>The following button is a custom button from a component library (XMLUI):</H2>
+  <H3>This button gets its greeting from the backend:</H3>
+  <CustomButton label="Purple Button" onClick="toast.success(Greet('Purple button'))" />
+  <H2>The following button is a custom text from a component library (React):</H2>
+  <StyledText 
+    size="large"
+    color="blue"
+    text="This is styled text from a React component library." 
+  />
+  <Select id="lines" initialValue="bakerloo" dropdownHeight="200px">
+    <Items data="https://api.tfl.gov.uk/line/mode/tube/status">
+        <Option value="{$item.id}" label="{$item.name}" />
+    </Items>
+  </Select>
+
+  <DataSource
+    id="stations"
+    when="{lines.value}"
+    url="https://api.tfl.gov.uk/Line/{lines.value}/Route/Sequence/inbound"
+    resultSelector="stations"/>
+
+  <Table data="{stations}" height="260px">
+    <Column bindTo="name" />
+    <Column bindTo="modes" />
+  </Table>
 </App>

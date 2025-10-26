@@ -6,7 +6,7 @@ set -euo pipefail
 # Usage: ./run.sh
 
 PROJECT_ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
-APP_BUNDLE="$PROJECT_ROOT/build/bin/wails-react-starter.app"
+APP_BUNDLE="$PROJECT_ROOT/build/bin/wails-xmlui.app"
 BINARY_PATH="$APP_BUNDLE/Contents/MacOS/wails-test"
 
 echo "Wails App Runner"

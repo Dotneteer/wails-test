@@ -1,4 +1,4 @@
-module wails-react-starter
+module wails-xmlui
 
 go 1.23
 

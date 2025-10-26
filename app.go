@@ -25,10 +25,3 @@ func (a *App) startup(ctx context.Context) {
 func (a *App) Greet(name string) string {
 	return fmt.Sprintf("Hello %s, It's show time!", name)
 }
-
-// LogMessage prints a message to the terminal/console
-func (a *App) LogMessage(message string) {
-	fmt.Println("=== Message from UI ===")
-	fmt.Println(message)
-	fmt.Println("=======================")
-}

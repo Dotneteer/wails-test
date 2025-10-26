@@ -12,18 +12,6 @@ export const StyledTextMd = createMetadata({
       description: "The text content to display",
       isRequired: false,
     },
-    variant: {
-      type: "string",
-      description: "The text style variant",
-      isRequired: false,
-      defaultValue: "normal",
-      availableValues: [
-        { value: "normal", description: "Normal text" },
-        { value: "bold", description: "Bold text" },
-        { value: "italic", description: "Italic text" },
-        { value: "underline", description: "Underlined text" },
-      ],
-    },
     size: {
       type: "string",
       description: "The text size",
@@ -56,7 +44,6 @@ export const styledTextComponentRenderer = createComponentRenderer(
     return (
       <StyledText
         text={extractValue(props.text)}
-        variant={extractValue(props.variant)}
         size={extractValue(props.size)}
         color={extractValue(props.color)}
         className={extractValue(className)}

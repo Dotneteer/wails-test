@@ -5,20 +5,18 @@ import classnames from "classnames";
 type Props = {
   children?: ReactNode;
   text?: string;
-  variant?: "normal" | "bold" | "italic" | "underline";
   size?: "small" | "medium" | "large" | "xlarge";
   color?: string;
   className?: string;
 };
 
-export const defaultProps: Pick<Props, "variant" | "size" | "color"> = {
-  variant: "normal",
+export const defaultProps: Pick<Props, "size" | "color"> = {
   size: "medium",
   color: "inherit",
 };
 
 export const StyledText = forwardRef<HTMLSpanElement, Props>(
-  ({ children, text, variant = "normal", size = "medium", color = "inherit", className }, ref) => {
+  ({ children, text, size = "medium", color = "inherit", className }, ref) => {
     const content = text || children;
 
     return (
@@ -26,7 +24,6 @@ export const StyledText = forwardRef<HTMLSpanElement, Props>(
         ref={ref}
         className={classnames(
           styles.styledText,
-          styles[`variant-${variant}`],
           styles[`size-${size}`],
           className
         )}
