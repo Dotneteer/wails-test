@@ -1,0 +1,11 @@
+{
+	"folders": [
+		{
+			"path": "../../../wails-test"
+		},
+		{
+			"path": "."
+		}
+	],
+	"settings": {}
+}

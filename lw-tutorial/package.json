@@ -1,0 +1,16 @@
+{
+  "name": "@nsoftware/lw-tutorial",
+  "private": true,
+  "version": "0.0.1",
+  "scripts": {
+    "start": "xmlui start",
+    "build": "xmlui build",
+    "preview": "xmlui preview",
+    "build-prod": "npm run build -- --prod",
+    "release-ci": "npm run build-prod && xmlui zip-dist",
+    "release-prod": "npm run build-prod && xmlui zip-dist"
+  },
+  "dependencies": {
+    "xmlui": "*"
+  }
+}
