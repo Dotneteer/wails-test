@@ -1,0 +1,15 @@
+{
+  "typescript.validate.enable": true,
+  "javascript.validate.enable": true,
+  "files.exclude": {},
+  "javascript.implicitProjectConfig.checkJs": false,
+  "typescript.tsdk": "frontend/node_modules/typescript/lib",
+  "files.associations": {
+    "**/wailsjs/**/*.js": "javascript"
+  },
+  "js/ts.implicitProjectConfig.checkJs": false,
+  "[javascript]": {
+    "editor.defaultFormatter": "vscode.typescript-language-features"
+  },
+  "typescript.preferences.includePackageJsonAutoImports": "auto"
+}

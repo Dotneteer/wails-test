@@ -1,0 +1,5 @@
+<Component name="CustomButton">
+  <Button color="purple">
+    {$props.label}
+  </Button>
+</Component>
