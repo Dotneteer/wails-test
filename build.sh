@@ -1,9 +1,9 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-# build-macos-binary.sh
+# build.sh
 # Builds the frontend and produces a macOS .app bundle.
-# Usage: ./build-macos-binary.sh [arch]
+# Usage: ./build.sh [arch]
 #   arch - optional target architecture (e.g. arm64, amd64). If omitted this script
 #          will use the host architecture.
 

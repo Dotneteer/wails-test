@@ -17,7 +17,7 @@ if [ ! -d "$APP_BUNDLE" ]; then
   echo "Error: Application bundle not found at: $APP_BUNDLE"
   echo ""
   echo "Please build the application first:"
-  echo "  ./build-macos-binary.sh"
+  echo "  ./build.sh"
   echo ""
   echo "Or run in development mode:"
   echo "  ./run-dev.sh"
@@ -28,7 +28,7 @@ fi
 if [ ! -f "$BINARY_PATH" ]; then
   echo "Error: Application bundle is incomplete (executable not found)."
   echo "Please rebuild the application:"
-  echo "  ./build-macos-binary.sh"
+  echo "  ./build.sh"
   exit 1
 fi
 
