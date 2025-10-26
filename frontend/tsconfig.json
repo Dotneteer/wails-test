@@ -7,6 +7,7 @@
       "esnext"
     ],
     "allowJs": true,
+    "checkJs": false,
     "skipLibCheck": true,
     "esModuleInterop": true,
     "types": ["vite/client", "node"],
@@ -28,5 +29,8 @@
     "src",
     "build",
     "index.ts"
+  ],
+  "exclude": [
+    "wailsjs"
   ]
 }

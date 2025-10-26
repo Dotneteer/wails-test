@@ -1,0 +1,5 @@
+<Component name="CustomButton">
+  <Button backgroundColor="purple" onClick="emitEvent('click')">
+    {$props.label}
+  </Button>
+</Component>

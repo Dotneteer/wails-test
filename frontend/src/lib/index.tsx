@@ -1,0 +1,7 @@
+import { customButtonRenderer } from "./CustomButton/CustomButton";
+import { styledTextComponentRenderer } from "./StyledText/StyledText";
+
+export default {
+  namespace: "XMLUIExtensions",
+  components: [customButtonRenderer, styledTextComponentRenderer],
+};

@@ -5,6 +5,7 @@
   "scripts": {
     "start": "xmlui start",
     "build": "xmlui build",
+    "postbuild": "../fix-wailsjs.sh",
     "preview": "xmlui preview",
     "build-prod": "npm run build -- --prod",
     "release-ci": "npm run build-prod && xmlui zip-dist",
